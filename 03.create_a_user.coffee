@@ -23,8 +23,10 @@ n.viewport 1000, 700
  .select "#years", "1982"
  .check "#newsletter"
  .check "#optin"
- .type "#firstname", "FirstName"
- .type "#lastname", "LastName"
+ .insert "#firstname", false
+ .insert "#firstname", "FirstName"
+ .insert "#lastname", false
+ .insert "#lastname", "LastName"
  .type "#company", "The Free Software Foundation"
  .type "#address1", "51 Franklin Stree"
  .type "#address2", "building #2"
@@ -35,11 +37,12 @@ n.viewport 1000, 700
  .type "#postcode", "11112"
  .type "#phone", "82332832832832"
  .type "#phone_mobile", "2332232332"
+ .type "#alias", false
  .type "#alias", "myalias"
  .click "#submitAccount"
  .wait "a.logout"
  .click "a.logout"
- .wait 30000
+ .wait 5000
  .end()
  .then(->
      console.log "Done"

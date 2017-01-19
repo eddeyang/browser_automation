@@ -7,7 +7,7 @@ n = N(
 n.goto "http://www.baidu.com"
  .type "#kw", "China"
  .click "#su"
-# .wait 30000
+ .wait 5000
  .end()
  .then(->
      console.log "Done"

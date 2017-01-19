@@ -25,7 +25,7 @@ n.viewport 1000, 700
  .select "#years", "1982"
  .check "#newsletter"
  .check "#optin"
- .wait 30000
+ .wait 5000
  .end()
  .then(->
      console.log "Done"
